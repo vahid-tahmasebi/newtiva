@@ -1,0 +1,239 @@
+/*BEGIN ADDED IRAN SANS FONT*/
+
+/**
+*
+*	Name:			IRAN Sans-Serif Font
+*	Version:		4.0
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Dec 25, 2012
+*	Updated on:		Dec 12, 2015
+*	Website:		http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+فونت های ایران سن سریف یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+IRAN Sans-serif fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+--------------------------------------------------------------------------------------
+*
+**/
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('./fonts/eot/IRANSansWeb_Bold.eot');
+    src: url('./fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('./fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('./fonts/woff/IRANSansWeb_Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('./fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+url('./fonts') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/eot/IRANSansWeb_Medium.eot');
+    src: url('./fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('./fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('./fonts/woff/IRANSansWeb_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('./fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/eot/IRANSansWeb_Light.eot');
+    src: url('./fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('./fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('./fonts/woff/IRANSansWeb_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('./fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('./fonts/eot/IRANSansWeb_UltraLight.eot');
+    src: url('./fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('./fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('./fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('./fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/eot/IRANSansWeb.eot');
+    src: url('./fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('./fonts/woff2/IRANSansWeb.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('./fonts/woff/IRANSansWeb.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('./fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+
+/*END ADDED IRAN SANS FONT*/
+
+
+.op-panel-wrapper {
+    margin: 25px 0;
+}
+
+.op-panel-sidebar {
+    color: #ffffff;
+    width: 15%;
+    float: right;
+    background-color: #32373c;
+}
+
+.op-panel-header {
+    color: #FFFFFF;
+    height: 105px;
+    background-color: #252b30;
+}
+
+.header-title {
+    /*display: inline-block;*/
+}
+
+.header-title h4 {
+    font-family: IRANSans !important;
+    font-size: 28px;
+    display: inline-block;
+}
+
+.header-title small {
+    font-family: IRANSans !important;
+}
+
+.header-title small {
+    font-family: IRANSans !important;
+    border-radius: 2px;
+    margin-right: 5px;
+    font-size: 8px;
+    line-height: 0;
+    padding: 3px 8px;
+    background-color: #5b9dd9;
+}
+
+.header-title {
+    padding: 10px 10px 0;
+}
+
+.header-team-name a {
+    font-family: IRANSans !important;
+    text-decoration: none !important;
+    outline: none !important;
+    margin-right: 10px;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 5px;
+    background-color: #d95b5b;
+}
+
+.header-team-name a:hover, a:active, a:focus {
+    color: inherit;
+    outline: none !important;
+    text-decoration: none;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    opacity: .8;
+}
+
+.op-panel-content {
+    width: 85%;
+    position: relative;
+    padding: 15px;
+    float: left;
+    font-family: IRANSans !important;
+    /*height: 600px;*/
+    background-color: #e7e7e7;
+    border: 1px solid rgba(153, 153, 153, 0.75);
+}
+
+.op-panel-sidebar ul li {
+    padding: 10px;
+}
+
+.op-panel-sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    outline: none !important;
+    font-family: IRANSans !important;
+}
+
+.op-panel-sidebar ul li a:focus {
+    outline: none !important;
+    text-decoration: none;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.op-panel-sidebar ul li .fa {
+    margin-left: 7px;
+}
+
+.op-panel-sidebar ul li ul li {
+    padding: 5px;
+}
+
+.op-panel-sidebar ul li ul li:hover {
+    background-color: #3a3e43;
+}
+
+.op-panel-sidebar ul li ul li a {
+    font-size: 11px;
+}
+
+.op-panel-sub-menu {
+    margin: 10px 0 0;
+}
+
+.menu-active {
+    background-color: #3a3e43 !important;
+}
+
+.btn-submit {
+    text-align: left;
+    display: inline-block;
+}
+
+.btn-submit-bottom {
+    text-align: left;
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+}
+
+.tab-title {
+    background-color: #5b9dd9;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+
+.tab-title-wrraper {
+    margin-bottom: 25px;
+}
+
+.op-panel-inner {
+    display: flex;
+}
+
+/* radio button button */
+.radio-inline, .checkbox-inline {
+    margin-bottom: -8px !important;
+}
+
+input[type=radio]:focus {
+    outline: none !important;
+}
+
+.radio-inline, .checkbox-inline {
+    padding-left: 5px !important;
+}
+
+.favicon, .header-script, .footer-script {
+    direction: ltr;
+}
+
+.lic-input {
+    width: 70%;
+}
+
+span.li-alert {
+    background: rgba(0, 0, 0, .1);
+    color: red;
+    padding: 2px 10px;
+    font-weight: 500;
+}
+
