@@ -174,6 +174,15 @@ input, textarea:-moz-placeholder { /* Firefox 18- */
     font-size: 16px;
     border-radius: 5px 5px 0 0;
 }
+.singlepost-box-header-download{
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    margin-top: 500px;
+    padding: 0px 15px;
+    border-radius: 5px 5px 0px 0px;
+    background: rgb(40, 53, 61) !important;
+}
 
 .box-header {
     background-color: #28353d;
@@ -2875,6 +2884,13 @@ div.user-social-network-icon ul li a i:hover {
     top: 65px;
 }
 
+.favorite-star-btn-download{
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    top: 550px;
+}
+
 /*end favorite button css style*/
 
 /* begin responsive menu css style*/
@@ -5043,7 +5059,7 @@ span.is-not-stock {
     line-height: 2 !important;
     list-style: none;
     background-color: #ffffff !important;
-    border-radius: 0 !important;
+    border-radius: 8px !important;
 }
 
 nav.woocommerce-breadcrumb {

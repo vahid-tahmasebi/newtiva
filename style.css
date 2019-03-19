@@ -2244,14 +2244,14 @@ img {
   display: inline-block;
   max-width: 100%;
   height: auto;
-  padding: 4px;
-  line-height: 1.42857143;
+  padding: 0px;
+  line-height: -0.571429;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 10px;
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out
+  transition: all .2s ease-in-out;
 }
 
 .img-circle {
@@ -13511,12 +13511,12 @@ i.fa.fa-chevron-up {
   font-family: IRANsans !important;
 }
 
-/******************************* Archive Maghalat Site ---------------------------------------/
+/******************************* Archive Maghalat Site ---------------------------------------*/
 .breadcrumbs {
-    background: url(../img/ribbon2.png) 0 0 no-repeat;
+    background: url(images/ribbon3.png) 0 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    padding: 10px 0;
+    padding: 20px 0;
     position: relative;
     color: #fff;
     font-size: 14px;
@@ -13534,15 +13534,15 @@ i.fa.fa-chevron-up {
     font-family: IRANSans;
 }
 .head-in-arshive>h1{
-    font-size: 20px;
-    margin-bottom: 25px;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 .head-in-arshive>p{
     font-size: 10px;
     text-align: justify;
     margin-top: 15px;
     font-weight: 900;
-    line-height: 2;
+    line-height: 2.5;
 }
 .butten-head-arshive{
     font-family: IRANSans;
@@ -13629,38 +13629,41 @@ i.fa.fa-chevron-up {
     font-family: IRANsans;
     font-size: 12px;
 }
+.image-box-arshive{
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+}
 /*********************************************************************************************************/
 .l-header{
-  background: linear-gradient(rgb(5, 119, 255) 0%, rgb(66, 8, 188) 100%);
+ background: linear-gradient(rgba(40,53,61,.85) 0%, rgba(40,53,61,.85) 100%);
   min-height: 400px;
-  padding: 50px 0 50px
-;
+  padding: 40px 0 50px;
   background-repeat:no-repeat ;
   background-size: cover;
 }
-.l-header h1{
-  font-size: 50px;
-  font-weight: 800;
+.l-header h2{
+  font-size: 30px;
   letter-spacing: -1px;
   color: #fff;
+  margin-top: 15px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -1px;
   margin-top: 20px;
+  font-family: IRANSans;;
 }
-.l-header h2{
-  font-size: 25px;
-  font-weight: 600;
-  color: #c7e2ff;
-}
-.l-header .details{
+.l-header .details {
   color: rgba(255,255,255,0.8);
   font-size: 16px;
-  margin-top: 40px;
+  margin-top: 20px;
   line-height: 25px;
   text-align: justify;
   font-weight: 100;
 }
 .l-header img{
-  margin-right: -200px;
-  margin-top: -150px;
+  margin-right: 0px;
+  margin-top:-20px;
 }
 @media(max-width: 1000px){
   .l-header{
@@ -13879,40 +13882,95 @@ i.fa.fa-chevron-up {
   font-size: 56px;
   padding: 46px;
 }
-.l-header img {
-  margin-right: -200px;
-  margin-top: -68px;
-}
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-.l-header h2 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #c7e2ff;
-  font-family: IRANSans;
-}
-.l-header h1 {
-  font-size: 30px;
-  line-height: 2;
-  font-weight: 800;
-  letter-spacing: -1px;
-  color: #fff;
-  margin-top: 20px;
-  font-family: IRANSans;
-}
-.l-header .details {
-  color: rgba(255,255,255,0.8);
-  font-size: 16px;
-  margin-top: 40px;
-  line-height: 25px;
-  text-align: justify;
-  font-weight: 100;
-}
 .btn-primary {
   color: #fff;
   background-color: #337ab7;
   border-color: #2e6da4;
   font-family: IRANsans;
+}
+
+/***********************************************************************************************/
+.ex-content{
+  color: #ffffff;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/*************************** Image Top Download ***********************************************/
+.box-cover{
+  background: #fff;
+  border-radius: 4px;
+  height: 450px;
+  padding: 30px 20px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  float: right;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 2px 1px #d3d2d3;
+  -moz-box-shadow: 0 1px 2px 1px #d3d2d3;
+  box-shadow: 0 1px 2px 1px #dcdcd;
+}
+
+.box-cover-img{
+  width: 100%;
+  height: 370px;
+  margin-top: -15px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+.box-cover-img>img{
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-right: 1px;
+}
+.box-button-img{
+  width: 100%;
+  height: 60px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  background-color: #;
+}
+.box-button-right{
+  float: right;}
+.box-button-left{
+  float: left;}
+.keys{
+  padding: 15px 0 0;
+  float: right;}
+.share{
+  color: #aeb6b8;
+  font-size: 12px;
+  float: left;
+  margin: 15px 0 0;
+  font-weight: 700;
+  line-height: 40px;}
+.box-cover .keys a{
+  background: #aeb6b8;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-family: IRANSans;
+  font-size: 12px;
+  color: #fff;
+  display: inline-block;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-left: 5px;
+  -webkit-transition: background .3s;
+  -moz-transition: background .3s;
+  -ms-transition: background .3s;
+  -o-transition: background .3s;
+  transition: background .3s;
+}
+.box-cover .keys a:hover{
+  background-color: #56b881;
+}
+.box-cover .keys a i {
+  font-size: 15px;
+  float: right;
+  margin-left: 10px;
 }

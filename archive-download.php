@@ -3,6 +3,28 @@ get_header();
 get_template_part('template-parts/header');
 get_template_part('template-parts/top-menu');
 ?>
+    <div class="mask">
+        <div class="breadcrumbs">
+            <div class="container">
+                <!--- Main Header Of Arshive -->
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="head-in-arshive">
+                            <h1>آرشیو مطالب <?php echo get_the_archive_title(); ?> </h1>
+                            <p><?php echo category_description(); ?></p>
+                        </div>
+                        <div class="butten-head-arshive">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="image-box-arshive">
+                            <img width="200px" height="200px" src="<?php print apply_filters( 'taxonomy-images-queried-term-image', '' );?>"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>>
     <section class="main-content hamyar-home ">
         <div class="container">
             <div class="row">

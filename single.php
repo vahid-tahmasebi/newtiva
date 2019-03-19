@@ -10,6 +10,33 @@ get_header();
 get_template_part('template-parts/header');
 get_template_part('template-parts/top-menu');
 ?>
+    <div class="l-header">
+        <div class="container">
+            <div class="row v3-flex-center ">
+                <div class="col-xl-9 col-lg-9 col-md-9 d-none d-sm-block">
+                    <span style="color: #ffffff;font-size: 20px;">موضوع این مقاله:</span>
+                    <h2 class="mb-4"><?php the_title() ?></h2>
+                    <p class="ex-content"><?php echo get_the_excerpt(); ?></p>
+                    <p class="details">
+                        <a class="btn btn-primary btn-lg" href="<?php the_field('Link_article'); ?>" target="_blank">با یک کلیک مقاله های مرتبط به این مقاله را مطالعه کن</a>
+                    </p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                        <div class="sing-post-thumbnail <?php echo tiva_get_css_class_post_format(get_the_ID()); ?>">
+                            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tiva-post-thum'); ?>"
+                                 class="single-post-img  img-thumbnail" alt="<?php echo the_title(); ?>"
+                                 title="<?php echo the_title(); ?>">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="svgbox">
+        <svg class="round svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 C40 0 60 0 100 100 Z"></path></svg>
+ </div>
+
+<br>
+
     <div class="container" id="single">
         <div class="main-content-wrapper">
             <?php if (!empty($tiva_options['single-page']['share_btn_show']) && $tiva_options['single-page']['share_btn_show'] === 'true' || !isset($tiva_options['single-page']['share_btn_show'])) :
@@ -93,7 +120,7 @@ get_template_part('template-parts/top-menu');
                                 </div>
                                 <?php if (empty(get_post_meta(get_the_ID(), 'tiva_private_post', true)) && empty(get_post_meta(get_the_ID(), 'tiva_vip_post', true))): ?>
 
-                                    <!--  BEGIN EDITED IN TIVA V5.5.2-->
+                                    <!--  BEGIN EDITED IN tiva V5.5.2-->
                                     <?php if (intval($post_thumbnail_mata) !== 1): ?>
                                         <div class="sing-post-thumbnail <?php echo tiva_get_css_class_post_format(get_the_ID()); ?>">
                                             <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tiva-post-thum'); ?>"
@@ -101,7 +128,7 @@ get_template_part('template-parts/top-menu');
                                                  title="<?php echo the_title(); ?>">
                                         </div>
                                     <?php endif; ?>
-                                    <!--  END EDITED IN TIVA V5.5.2-->
+                                    <!--  END EDITED IN tiva V5.5.2-->
 
                                     <article class="single-post-content">
                                         <?php the_content(); ?>
@@ -279,13 +306,13 @@ get_template_part('template-parts/top-menu');
                     }
                     ?>
                     <div class="clearfix"></div>
-                    <!-- /********************************* BEGIN ADD IN TIVA V5.8  ****************************/-->
+                    <!-- /********************************* BEGIN ADD IN tiva V5.8  ****************************/-->
                     <?php if (!empty($tiva_options['single-page']['rrs_show']) && $tiva_options['single-page']['rrs_show'] === 'true'): ?>
                         <div class="h-rss-wrapper card-wrapper">
                             <?php get_template_part('template-parts/tiva-rss') ?>
                         </div>
                     <?php endif; ?>
-                    <!-- /********************************* END ADD IN TIVA V5.8 ******************************/-->
+                    <!-- /********************************* END ADD IN tiva V5.8 ******************************/-->
                     <?php
                     if (!empty($tiva_options['single-page']['post_related_show']) && $tiva_options['single-page']['post_related_show'] === 'true' || !isset($tiva_options['single-page']['post_related_show'])) :
                         ?>
