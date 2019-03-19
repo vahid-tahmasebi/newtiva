@@ -17,12 +17,12 @@ get_template_part('template-parts/top-menu');
     <div class="container">
         <div class="row v3-flex-center ">
             <div class="col-xl-9 col-lg-9 col-md-9 d-none d-sm-block">
-                <span style="color: #ffffff;font-size: 20px;">موضوع این مقاله:</span>
+                <span class="span-in-top">موضوع این مقاله:</span>
                 <h2 class="mb-4"><?php the_title() ?></h2>
                 <p class="ex-content"><?php echo get_the_excerpt(); ?></p>
-                <p class="details">
+               <!-- <p class="details">
                     <a class="btn btn-primary btn-lg" href="<?php the_field('Link_article'); ?>" target="_blank">با یک کلیک مقاله های مرتبط به این مقاله را مطالعه کن</a>
-                </p>
+                </p> -->
             </div>
             <div class="col-xl-3 col-lg-3 col-md-3">
                 <div class="sing-post-thumbnail <?php echo tiva_get_css_class_post_format(get_the_ID()); ?>">
@@ -96,6 +96,7 @@ get_template_part('template-parts/top-menu');
             ?>
                 main-content">
                 <div class="hidden-xs"> <?php echo get_hansel_and_gretel_breadcrumbs(); ?></div>
+                <!----------- Add Box to Page Download ------------>
                     <div class="box-cover">
                         <div class="box-cover-img">
                             <img src="<?php the_field('add_download_page');?>">
@@ -105,7 +106,7 @@ get_template_part('template-parts/top-menu');
                             <div class="box-button-right">
                                 <div class="keys">
                                     <a href="<?php the_field('preve_link'); ?>" target="_blank"><i class="fa fa-desktop"></i>پیش نمایش دانلود</a>
-                                    <a href="#"><i class="fa fa-picture-o"></i>تصاویر مربوط به دانلود</a>
+                                    <a href="<?php the_field('pic_product'); ?>"><i class="fa fa-picture-o"></i>تصاویر مربوط به دانلود</a>
                                 </div>
                             </div>
                             <div class="box-button-left">
@@ -115,7 +116,7 @@ get_template_part('template-parts/top-menu');
                             </div>
                         </div>
                     </div>
-
+                <!----------- End Add Box to Page Download ------------>
 
                 <header class="singlepost-box-header-download">
                     <h2 class="post-title"><?php the_title() ?></h2>

@@ -178,7 +178,7 @@ input, textarea:-moz-placeholder { /* Firefox 18- */
     height: 60px;
     line-height: 60px;
     font-size: 16px;
-    margin-top: 500px;
+    margin-top: 536px;
     padding: 0px 15px;
     border-radius: 5px 5px 0px 0px;
     background: rgb(40, 53, 61) !important;
@@ -2887,8 +2887,8 @@ div.user-social-network-icon ul li a i:hover {
 .favorite-star-btn-download{
     display: inline-block;
     position: absolute;
-    left: 30px;
-    top: 550px;
+    left: 40px;
+    top: 586px;
 }
 
 /*end favorite button css style*/

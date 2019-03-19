@@ -1705,7 +1705,7 @@ function tiva_registration_account_for_all_form_func($user_id)
 // ****************** ADD TIVA V5.8.2 FUNCTION *********************
 
 // **** BEGIN TIVA THEME INCLUDE ****
-require_once 'inc/jdatetime.class.php'; // EDITED IN TIVA V5.8
+require_once 'inc/jdatetime.class.php';
 include get_template_directory() . '/inc/tiva_info.php';
 include get_template_directory() . '/inc/ajax.php';
 include get_template_directory() . '/inc/user_info.php';
@@ -1715,95 +1715,31 @@ include get_template_directory() . '/inc/Breadcrumbs.php';
 include get_template_directory() . '/inc/shortcodes.php';
 include get_template_directory() . '/inc/sidebar.php';
 include get_template_directory() . '/inc/download-post-type.php';
-include get_template_directory() . '/inc/video-post-type.php'; // add in tiva v4
+include get_template_directory() . '/inc/video-post-type.php';
 include get_template_directory() . '/widget/new_post_query_widget.php';
-include get_template_directory() . '/widget/must_views_download_query_in_mon_widget.php'; // add in tiva v4
-include get_template_directory() . '/widget/must_views_query_in_mon_widget.php'; // add in tiva v4
-include get_template_directory() . '/widget/must_views_download_and_post_query_in_mon_widget.php'; // add in tiva v4
+include get_template_directory() . '/widget/must_views_download_query_in_mon_widget.php';
+include get_template_directory() . '/widget/must_views_query_in_mon_widget.php';
+include get_template_directory() . '/widget/must_views_download_and_post_query_in_mon_widget.php';
 include get_template_directory() . '/widget/hot_post_query_widget.php';
-include get_template_directory() . '/widget/tiva_ads_widget.php'; // add in tiva v4
-include get_template_directory() . '/widget/tiva_ads_script_widget.php'; // add in tiva v4
+include get_template_directory() . '/widget/tiva_ads_widget.php';
+include get_template_directory() . '/widget/tiva_ads_script_widget.php';
 include get_template_directory() . '/widget/must_views_query_widget.php';
 include get_template_directory() . '/widget/hot_download_query_widget.php';
-include get_template_directory() . '/widget/woocommerce_cat_img_widget.php'; /// add tiva img woocommerce cat img widget at v3
+include get_template_directory() . '/widget/woocommerce_cat_img_widget.php';
 include get_template_directory() . '/widget/must_views_download_query_widget.php';
 include get_template_directory() . '/widget/new_download_query_widget.php';
 include get_template_directory() . '/widget/img_cat_widget.php';
 include get_template_directory() . '/widget/must_count_download_query_widget.php';
 include get_template_directory() . '/widget/post_slider_widget.php';
 include get_template_directory() . '/inc/wp-bootstrap-navwalker.php';
-include get_template_directory() . '/inc/user-waller-credit-system.php'; // add in tiva v5
-include get_template_directory() . '/inc/email-template-generator.php'; // add in tiva v5
+include get_template_directory() . '/inc/user-waller-credit-system.php';
+include get_template_directory() . '/inc/email-template-generator.php';
 include get_template_directory() . '/admin/admin.php';
 include get_template_directory() . '/editor_plugins/plugins.php';
 include get_template_directory() . '/panel/panel.php';
-
 /*******************************************************************************/
 include get_template_directory() . '/inc/option-in-wp/style-add-in-dashbord.php';
 include get_template_directory() . '/inc/option-in-wp/thaghire-name-wp.php';
+include get_template_directory() . '/inc/option-in-wp/box-fild-add-download.php';
+include get_template_directory() . '/widget/add_moshakhasat_download.php';
 /*******************************************************************************/
-if( function_exists('acf_add_local_field_group') ):
-
-    acf_add_local_field_group(array(
-        'key' => 'group_5c8fe673ba42d',
-        'title' => 'باکس دانلود ژاکتی',
-        'fields' => array(
-            array(
-                'key' => 'field_5c8fe691271ce',
-                'label' => 'تصویر شاخص محصول دانلودی',
-                'name' => 'add_download_page',
-                'type' => 'text',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_5c8fead941b0c',
-                'label' => 'لینک پیش نمایش',
-                'name' => 'preve_link',
-                'type' => 'text',
-                'instructions' => '',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array(
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'download',
-                ),
-            ),
-        ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-        'active' => true,
-        'description' => '',
-    ));
-
-endif;
