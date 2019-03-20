@@ -5,7 +5,7 @@
             <div class="vip-plan-inner">
                 <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp ">
                     <div class="vip-plan-dis">
-                        <span class="vip-lable">عضویت ویژه کارسازشو</span>
+                        <a href="https://karsazsho.com/login-user" target="_blank"><span class="vip-lable">عضویت ویژه کارسازشو</span></a>
                         <span class="vip-plan-title">با عضویت ویژه بدون محدودیت به تمام قسمت های سایت کارسازشو دسترسی داشته باشید.</span>
                         <p class="vip-plan-dis">
                                 با عضویت ویژه به مقالات و فایل ها و ویدیو های مخصوص کاربران ویژه سایت دسترسی خواهید

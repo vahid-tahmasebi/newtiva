@@ -1434,8 +1434,7 @@ function tiva_get_vip_plan_price($type)
 // end vip plan price
 
 // begin vip plan price
-function tiva_get_vip_plan_gift_credit($type)
-{
+function tiva_get_vip_plan_gift_credit($type){
     $tiva_options = get_option('tiva_options');
     switch ($type) {
 
@@ -1466,8 +1465,7 @@ function tiva_get_vip_plan_gift_credit($type)
 
 // end vip plan price
 
-function tiva_get_vip_plan_name($type)
-{
+function tiva_get_vip_plan_name($type){
     switch ($type) {
         case 'gold':
             return 'طلایی';
@@ -1481,8 +1479,7 @@ function tiva_get_vip_plan_name($type)
     }
 }
 
-function tiva_get_vip_plan_mount_int($type)
-{
+function tiva_get_vip_plan_mount_int($type){
     $tiva_options = get_option('tiva_options');
     switch ($type) {
 
@@ -1527,8 +1524,7 @@ function tiva_get_vip_plan_mount_int($type)
 if (!is_admin()) {
     add_action('pre_get_posts', 'tiva_set_per_page_product');
 }
-function tiva_set_per_page_product($query)
-{
+function tiva_set_per_page_product($query){
     global $wp_the_query;
     if ($query->is_post_type_archive('product') && ($query === $wp_the_query)) {
         $query->set('posts_per_page', 12);
@@ -1536,8 +1532,7 @@ function tiva_set_per_page_product($query)
     return $query;
 }
 
-function tiva_modify_product_cat_query($query)
-{
+function tiva_modify_product_cat_query($query){
     // ADD IN TIVA V5.8.2
     // FIX BUG IN TIVA V5.8.2
     if (!is_admin() && $query->is_tax("product_cat") || $query->is_tax("product_tag") || $query->is_tax(get_query_var('taxonomy'))) {
@@ -1551,8 +1546,7 @@ add_action('pre_get_posts', 'tiva_modify_product_cat_query');
 
 
 // ****************** BEGIN TIVA V5.5 FUNCTION *******************
-function tiva_remove_script_version($src)
-{
+function tiva_remove_script_version($src){
     $parts = explode('?', $src);
     return $parts[0];
 }
@@ -1561,8 +1555,7 @@ add_filter('script_loader_src', 'tiva_remove_script_version', 15, 1);
 add_filter('style_loader_src', 'tiva_remove_script_version', 15, 1);
 
 // BEGIN EDITED IN TIVA V5.5.2
-function tiva_check_login($email, $password)
-{
+function tiva_check_login($email, $password){
     $is_email = is_email($email);
     if ($is_email) {
         $user = wp_authenticate_email_password(null, $email, $password);
@@ -1587,8 +1580,7 @@ function tiva_check_login($email, $password)
     }
 }
 
-function tiva_user_login($post)
-{
+function tiva_user_login($post){
     global $login_result;
 
 
@@ -1702,7 +1694,7 @@ function tiva_registration_account_for_all_form_func($user_id)
 
 }
 
-// ****************** ADD TIVA V5.8.2 FUNCTION *********************
+
 
 // **** BEGIN TIVA THEME INCLUDE ****
 require_once 'inc/jdatetime.class.php';
@@ -1741,5 +1733,4 @@ include get_template_directory() . '/panel/panel.php';
 include get_template_directory() . '/inc/option-in-wp/style-add-in-dashbord.php';
 include get_template_directory() . '/inc/option-in-wp/thaghire-name-wp.php';
 include get_template_directory() . '/inc/option-in-wp/box-fild-add-download.php';
-include get_template_directory() . '/widget/add_moshakhasat_download.php';
 /*******************************************************************************/

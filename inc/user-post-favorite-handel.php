@@ -1,7 +1,6 @@
 <?php
 add_action('wp_ajax_tiva_user_post_favorite', 'tiva_user_post_favorite');
-function tiva_user_post_favorite()
-{
+function tiva_user_post_favorite(){
     $user_id = intval($_POST['user_id']);
     $post_id = intval($_POST['post_id']);
     global $msg, $error;

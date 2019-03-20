@@ -6,9 +6,30 @@ tiva_set_post_view($post->ID); ?>
 $date = new jDateTime(true, true, 'Asia/Tehran');
 get_header();
 get_template_part('template-parts/header');
-get_template_part('template-parts/top-menu');
+get_template_part('template-parts/top-menu'); ?>
 
-?>
+    <div class="l-header">
+        <div class="container">
+            <div class="row v3-flex-center ">
+                <div class="col-xl-9 col-lg-9 col-md-9 d-none d-sm-block">
+                    <span class="span-in-top">موضوع این مقاله:</span>
+                    <h2 class="mb-4"><?php the_title() ?></h2>
+                    <p class="ex-content"><?php echo get_the_excerpt(); ?></p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                    <div class="sing-post-thumbnail <?php echo tiva_get_css_class_post_format(get_the_ID()); ?>">
+                        <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tiva-post-thum'); ?>"
+                             class="single-post-img  img-thumbnail" alt="<?php echo the_title(); ?>"
+                             title="<?php echo the_title(); ?>">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="svgbox">
+        <svg class="round svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 C40 0 60 0 100 100 Z"></path></svg>
+    </div>
+
     <div class="container" id="single">
         <div class="main-content-wrapper ">
             <div class="breadcrumbs-page" style="margin-top: 15px;">
@@ -31,7 +52,7 @@ get_template_part('template-parts/top-menu');
                 }
                 ?>
                  main-content woo-page-main-content">
-                    <!--EDITED IN TIVA V5.5.2-->
+
                     <header class="singlepost-box-header">
                         <h2 class="post-title"><?php the_title() ?></h2>
                     </header>
@@ -44,7 +65,7 @@ get_template_part('template-parts/top-menu');
                             <?php endwhile; ?>
                         <?php endif; ?>
                     </div>
-                    <!--  // FIX BUG IN TIVA V5.8.2 -->
+
                     <div class="clearfix"></div>
                     <div class="comments-area-wrapper card-wrapper">
                         <?php

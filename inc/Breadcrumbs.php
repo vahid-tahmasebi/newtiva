@@ -7,7 +7,7 @@ function get_hansel_and_gretel_breadcrumbs()
 {
     // Set variables for later use
     $home_link        = home_url('/');
-    $home_text        = __( 'خانه' );
+    $home_text        = __( 'کارسازشو' );
     $link_before      = '<span typeof="v:Breadcrumb">';
     $link_after       = '</span>';
     $link_attr        = ' rel="v:url" property="v:title"';
@@ -138,7 +138,7 @@ function get_hansel_and_gretel_breadcrumbs()
 
         } elseif ( is_author() ) {
 
-            $breadcrumb_trail = __( 'آرشیو مطالب  ') .  $before . $queried_object->data->display_name . $after;
+            $breadcrumb_trail = __( 'آرشیو مطالب سایت کارسازشو  ') .  $before . $queried_object->data->display_name . $after;
 
         } elseif ( is_date() ) {
             // Set default variables

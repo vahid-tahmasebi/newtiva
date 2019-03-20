@@ -48,7 +48,7 @@ $date = new jDateTime(true, true, 'Asia/Tehran');
                     <span data-counter="counterup"
                           data-value="1349"><?php echo tiva_change_number($count_comments->total_comments) ?></span>
                 </div>
-                <div class="desc"><?php _e('کل دیدگاه های سایت', 'tiva'); ?> </div>
+                <div class="desc"><?php _e('کل نظراتی که در سایت ثبت شده', 'tiva'); ?> </div>
             </div>
         </a>
     </div>
@@ -63,7 +63,7 @@ $date = new jDateTime(true, true, 'Asia/Tehran');
                           data-value="12,5"><?php $count_posts_download = wp_count_posts('download');
                         echo tiva_change_number($count_posts->publish + $count_posts_download->publish) ?></span>
                 </div>
-                <div class="desc"><?php _e('کل مطالب سایت', 'tiva'); ?></div>
+                <div class="desc"><?php _e('کل مطالبی که در سایت منتشر شده', 'tiva'); ?></div>
             </div>
         </a>
     </div>
@@ -77,7 +77,7 @@ $date = new jDateTime(true, true, 'Asia/Tehran');
                     <span data-counter="counterup"
                           data-value="549"><?php echo tiva_change_number($count_users['total_users']) ?></span>
                 </div>
-                <div class="desc"><?php _e('کل کاربران سایت', 'tiva'); ?></div>
+                <div class="desc"><?php _e('کل کاربران عضو شده در سایت', 'tiva'); ?></div>
             </div>
         </a>
     </div>
@@ -104,7 +104,7 @@ $date = new jDateTime(true, true, 'Asia/Tehran');
             <div class="portlet-title">
                 <div class="caption">
                     <i class="icon-bubble font-dark hide"></i>
-                    <span class="caption-subject font-hide bold uppercase"><?php _e('جدیدترین کاربران عضو شده', 'tiva') ?></span>
+                    <span class="caption-subject font-hide bold uppercase"><?php _e('جدید ترین کاربران عضو شده در سایت', 'tiva') ?></span>
                 </div>
             </div>
             <div class="portlet-body">

@@ -13075,33 +13075,62 @@ body.lobibox-open {
   background-color: #03a9f4;
 }
 /************************************** Div Box Top Slider Site ***********************************/
-.box-top-slider {height:90px;background-color:#ffffff;margin-top:10px;box-shadow:3px 3px 3px 3px #e9f2f9;border-radius: 5px;padding: 10px 0px 10px 0px;}
-.box-top-box{width: 222px;background-color: #ffffff;margin-right: 4px;padding: 0px 0px;margin-top: -8px;}
-div.box-top-box>img{float:right;margin-right:0px;margin-left:8px;}
-div.box-top-box>img:hover{font-size: 50px;}
-div.box-top-box>p{float:left;margin-left:26px;font-size:10px;text-align:center;}
-div.box-top-box>h5{text-align: right;line-height:inherit;margin-right: 86px !important;margin-top: -52px;}
-.css-sprite-diamond1{
-  background:url('images/css-sprite-combined.png') -2px -0px;
+.box-top-slider{height:90px;
+  background-color:#ffffff;
+  margin-top:10px;
+  box-shadow:3px 3px 3px 3px #e9f2f9;
+  border-radius: 5px;
+  padding: 10px 4px 10px 0px;
+}
+.box-top-box{
+    width: 215px;
+    background-color: #ffffff;
+    margin-right: 5px;
+    padding: 0px 0px;
+    margin-top: -3px;
+    line-height: 1;
+}
+div.box-top-box>img{
+  float:right;
+  margin-right:0px;
+  margin-left:8px;}
+div.box-top-box>img:hover{
+  font-size: 50px;
+}
+div.box-top-box>p{
+    float: left;
+    margin-left: -2px;
+    font-size: 10px;
+    position: inherit;
+    text-align: center;
+}
+div.box-top-box>h5{
+  text-align: right;
+  line-height: inherit;
+  margin-right: 68px !important;
+  margin-top: -50px;
+}
+.css-sprite-digital-markting{
+  background:url('images/css-sprite-combined.png') -14px -0px;
   width:64px;height:64px;
   display:inline-block;
 }
-.css-sprite-laptop-1-min {
-  background:url('images/css-sprite-combined.png') -68px -0px;
+.css-sprite-seo-new {
+  background:url('images/css-sprite-combined.png') -78px -0px;
   width:64px;height:64px;
   display:inline-block;
 }
-.css-sprite-payment-min {
-  background:url('images/css-sprite-combined.png') -134px -0px;
+.css-sprite-add-berand {
+  background:url('images/css-sprite-combined.png') -142px -0px;
   width:64px;height:64px;
   display:inline-block;
 }
-.css-sprite-support-min {
+.css-sprite-wordpress {
   background:url('images/css-sprite-combined.png') -200px -0px;
   width:64px;height:64px;
   display:inline-block;
 }
-.css-sprite-video-camera-min {
+.css-sprite-kasbokar {
   background:url('images/css-sprite-combined.png') -266px -0px;
   width:64px;height:64px;
   display:inline-block;
@@ -13193,8 +13222,8 @@ div.show-video-wrapper {
   position: relative;
   color: #fff;
   background-color: #28353d !important;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 4.25rem;
   padding: 2rem 2rem 8rem;
 }
 a.price-plan-btn {
@@ -13512,19 +13541,21 @@ i.fa.fa-chevron-up {
 }
 /******************************* Archive Maghalat Site ---------------------------------------*/
 .breadcrumbs {
-    background: url(images/ribbon3.png) 0 0 no-repeat;
+    background: url("images/download.png") 0 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    background-color: #28353d;
     padding: 20px 0;
     position: relative;
     color: #fff;
     font-size: 14px;
+    height: 350px;
 }
 .breadcrumbs .mask {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(40,53,61,.85);
+    background-color: rgba(40,53,61,.85);
     top: 0;
     left: 0;
 }
@@ -13629,13 +13660,102 @@ i.fa.fa-chevron-up {
     font-size: 12px;
 }
 .image-box-arshive{
+  width: 250px;
+  height: 250px;
+  float:right;
+  margin-top: 30px;
+}
+.image-in-category{
   width: 200px;
   height: 200px;
-  line-height: 200px;
 }
+
+.box-download{
+  background: #fff;
+  border-radius: 2px;
+  padding: 20px 10px;
+  margin-top: 10px;
+  float: right;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 2px 1px #d3d2d3;
+  -moz-box-shadow: 0 1px 2px 1px #d3d2d3;
+  box-shadow: 0 1px 2px 1px #d3d2d3;
+}
+.box-in-download{
+  width: 31%;
+  height: 340px;
+  margin-right: 20px;
+  background: #fff;
+  border-radius: 0px;
+  margin-top: 20px;
+  float: right;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 2px 1px #d3d2d3;
+  -moz-box-shadow: 0 1px 2px 1px #d3d2d3;
+  box-shadow: 0 1px 2px 1px #d3d2d3;
+}
+.cover-image{
+  width: 33%;
+  height: 180px;
+  text-align: center;
+}
+.cover-image>img{
+  max-width: 100%;
+  max-height: 180px;
+}
+.cover-image>i{
+  width: 100%;
+  height: 30px;
+  background:rgba(0,0,0,.6);
+  font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.box-in-download>a>h2{
+  font-family: IRANSans;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 5px;
+  color: #3b4446;
+  transition: color .3s;
+}
+.box-in-download>a>p{
+  font-family: IRANSans;
+  font-size: 10px;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-right: 5px;
+  color:#3b4446;
+  transition: color .3s;
+}
+.border-in-box{
+  border-top: 2px solid #2e6da4;
+  opacity: 0.5;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.namayesh-but{
+  margin-top: 10px;
+  font-size: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 10px 15px;
+  width: 100%;
+  float: right;
+  border-top: 1px solid #f1f1f1;
+}
+.butoon-in-download{
+  width: 100%;
+  font-family: IRANsans;
+  font-size: 12px;
+}
+
 /*********************************************************************************************************/
 .l-header{
- background: linear-gradient(rgba(40,53,61,.85) 0%, rgba(40,53,61,.85) 100%);
+  /*background: linear-gradient(rgba(40,53,61,.85) 0%, rgba(40,53,61,.85) 100%);*/
+  background-color: #28353d !important;
   min-height: 400px;
   padding: 40px 0 50px;
   background-repeat:no-repeat ;
@@ -13898,6 +14018,9 @@ i.fa.fa-chevron-up {
   margin-top: 20px;
   line-height: 2;
 }
+.ex-cont-lop{
+  text-align: justify;
+}
 /*************************** Image Top Download ***********************************************/
 .box-cover{
   background: #fff;
@@ -13975,39 +14098,25 @@ i.fa.fa-chevron-up {
   float: right;
   margin-left: 10px;
 }
-
-
-/***************************************  Widget ---------------------------------*/
-.status-box-download ul li span.title {
-    float: right;
-    font-family: IRANSans;
-    margin-right: 1px;
-}
-.status-box-download ul li {
-    font-size: 14px;
-    color: #525e61;
-    float: right;
-    width: 100%;
-    padding: 0 0 10px;
-    margin-bottom:5px;
-    list-style: none;
-}
-.status-box-download ul li span.value {
-    float: left;
-    font-weight: 700;
-    font-family: IRANSans;
-}
-.box-moshakhasat{
-  margin-top: 0px;
-  margin-bottom: 5px;
-}
-.box{
-  height: 200px;
+.box-description-in-download{
   width: 100%;
-  overflow: hidden;
-  overflow: visible;
-  margin-bottom: 30px;
+  height: 120px;
+  background-color: red;
   -webkit-box-shadow: 0 1px 2px 1px #d3d2d3;
   -moz-box-shadow: 0 1px 2px 1px #d3d2d3;
   box-shadow: 0 1px 2px 1px #d3d2d3;
 }
+
+/**************************************************************/
+.card-wrapper .sidebar-wrapper>img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-wrapper>a>img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+

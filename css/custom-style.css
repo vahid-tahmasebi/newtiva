@@ -139,7 +139,7 @@ input, textarea:-moz-placeholder { /* Firefox 18- */
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: #fff
 }
 
@@ -265,7 +265,7 @@ span.username {
     list-style: none;
     font-size: 12px;
     background-color: #ffffff !important;
-    border-radius: 0 !important;
+    border-radius: 10px 10px 0 0 !important;
 }
 
 div.tiva-border {
@@ -2957,7 +2957,7 @@ div#myModal {
 .scrollToTop {
     position: fixed;
     right: 30px;
-    bottom: 85px;
+    bottom: 100px;
     width: 50px;
     height: 50px;
     -webkit-border-radius: 3px;
@@ -3044,7 +3044,7 @@ span.widget-post-aut {
 
 /* start share post bottom*/
 .post-share-btn {
-    margin-top: 90px;
+    margin-top: 15px;
     /*height: 250px;*/
     width: 50px;
     padding: 6px 0 0;
@@ -6884,7 +6884,7 @@ a.login-btn {
 }
 
 .main-content-wrapper.hamyar-home {
-    margin-top: 20px;
+    margin-top: 1px;
 }
 
 /*end new v3 header style*/
@@ -7094,8 +7094,8 @@ p.must-log-in {
 
 .v3-login-user .login-form-section input.tiva_login-form, .login-form-section input.tiva_register-form, .login-form-section .form-rest-btn {
     padding: .5em 0em !important;
-    border-radius: 50px;
-    width: 50%;
+    border-radius: 15px;
+    width: 100%;
     line-height: 2 !important;
     background-color: #3ca3f4 !important;
     display: inline-block;

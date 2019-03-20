@@ -8,11 +8,8 @@ $post_thumbnail_mata = get_post_meta($post_id, 'tiva_show_post_thumbnail');
 $date = new jDateTime(true, true, 'Asia/Tehran');
 get_header();
 get_template_part('template-parts/header');
-get_template_part('template-parts/top-menu');
+get_template_part('template-parts/top-menu'); ?>
 
-//var_dump(get_post_meta($post_id, 'tiva_vip_post', true))
-
-?>
     <div class="container" id="single">
         <div class="main-content-wrapper">
             <?php if (!empty($tiva_options['single-page']['share_btn_show']) && $tiva_options['single-page']['share_btn_show'] === 'true' || !isset($tiva_options['single-page']['share_btn_show'])) :
@@ -68,7 +65,8 @@ get_template_part('template-parts/top-menu');
                     echo 'col-lg-9 col-md-9 col-sm-12 col-xs-12';
                 }
                 ?>
-        main-content">
+   main-content">
+                    
                     <div class="hidden-xs"> <?php echo get_hansel_and_gretel_breadcrumbs(); ?></div>
                     <div class="video-wrapper">
                         <?php if (get_post_meta($post_id, 'tiva-video-select', true) === 'no'): ?>

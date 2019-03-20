@@ -3,6 +3,7 @@ $noti_cookie = isset($_COOKIE['tiva_noti_close']);
 $noti_disable = $tiva_options['noti-bar-sitting']['noti-disable']; ?>
 <?php if ($noti_disable == 'true' || $noti_disable == ''): ?>
     <?php if ($noti_cookie == false): ?>
+
         <div class=""
              style="background-color:<?php echo (!empty($tiva_options['noti-bar-sitting']['noti-wrapper-color'])) ? $tiva_options['noti-bar-sitting']['noti-wrapper-color'] : '#fada01'; ?>">
             <div class="noti-wrapper hidden-noti"
@@ -53,7 +54,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                         <?php wp_nav_menu(array('theme_location' => 'tiva_header_top_main_menu', 'container_class' => 'theader-menu')); ?>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 hid">
                     <div class="pull-left">
                         <div class="menu-info">
                             <i>  ۰۹۳۵۹۹۰۵۳۵۹ : مشاوره رایگان</i>

@@ -82,8 +82,76 @@ if( function_exists('acf_add_local_field_group') ):
         'description' => '',
     ));
 
-endif;
-if( function_exists('acf_add_local_field_group') ):
+    acf_add_local_field_group(array(
+        'key' => 'group_5c90dab3a6d49',
+        'title' => 'عکس شاخص دسته بندی',
+        'fields' => array(
+            array(
+                'key' => 'field_5c90dac5ff1a2',
+                'label' => 'عکس دسته بندی',
+                'name' => 'pic_cate',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'taxonomy',
+                    'operator' => '==',
+                    'value' => 'category',
+                ),
+            ),
+            array(
+                array(
+                    'param' => 'taxonomy',
+                    'operator' => '==',
+                    'value' => 'themes',
+                ),
+            ),
+            array(
+                array(
+                    'param' => 'taxonomy',
+                    'operator' => '==',
+                    'value' => 'plugins',
+                ),
+            ),
+            array(
+                array(
+                    'param' => 'taxonomy',
+                    'operator' => '==',
+                    'value' => 'product_cat',
+                ),
+            ),
+            array(
+                array(
+                    'param' => 'taxonomy',
+                    'operator' => '==',
+                    'value' => 'video-categories',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+    ));
 
     acf_add_local_field_group(array(
         'key' => 'group_5c90a32aa399c',

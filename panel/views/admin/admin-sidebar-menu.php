@@ -27,7 +27,7 @@
             <li class="nav-item start <?php echo ($current_panel == 'admin-dashboard') ? 'active open' : '' ?>">
                 <a href="<?php echo home_url() . '/admin-panel/admin-dashboard'; ?>" class="nav-link nav-toggle">
                     <i class="fa fa-home" aria-hidden="true"></i>
-                    <span class="title"><?php _e('داشبورد', 'tiva'); ?></span>
+                    <span class="title"><?php _e('صفحه اصلی داشبورد', 'tiva'); ?></span>
                     <span class="<?php echo ($current_panel == 'admin-dashboard') ? 'selected' : '' ?>"></span>
                 </a>
             </li>
@@ -122,7 +122,7 @@
             <li class="nav-item <?php echo ($current_panel == 'tickets' || $current_panel == 'send-ticket' || $current_panel == 'show-ticket') ? 'active open' : '' ?> ">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="fa fa-question" aria-hidden="true"></i>
-                    <span class="title"><?php _e('پشتیبانی', 'tiva'); ?></span>
+                    <span class="title"><?php _e('پشتیبانی و تیکت ها', 'tiva'); ?></span>
                     <span class="arrow <?php echo ($current_panel == 'tickets' || $current_panel == 'show-ticket') ? ' open' : '' ?>"></span>
                     <span class="<?php echo ($current_panel == 'tickets' || $current_panel == 'show-ticket') ? 'selected' : '' ?> "></span>
                 </a>

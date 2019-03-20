@@ -8,7 +8,7 @@ global $post;
 ?>
 <?php if (have_posts()): ?>
     <?php while (have_posts()):the_post(); ?>
-        <div class="col-xs-12 col-sm-6 col-md-4 wow fadeInUp h-box-w">
+        <div class="col-xs-12 col-sm-6 col-md-4 h-box-w">
             <article class="h-box">
                 <header class="entry-header">
                     <div class="clearfix"></div>
@@ -37,12 +37,9 @@ global $post;
                     <div class="clearfix"></div>
                 </header><!-- .entry-header -->
                 <div class="clearfix"></div>
+
                 <div class="entry-content">
-                    <div class="excerpt">
-                        <?php
-                      the_excerpt();
-                        ?>
-                    </div>
+                    <div class="excerpt ex-cont-lop"> <?php the_excerpt(); ?> </div>
                     <div class="clearfix"></div>
                     <?php if (get_post_type() == 'download'): ?>
                         <div class="download">

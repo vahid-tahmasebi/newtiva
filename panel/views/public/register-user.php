@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+get_header();
+$tiva_options = get_option('tiva_options');
+?>
 <div class="logino">
     <div class="container login-wrapper v3-login-user">
         <div class="login-user">

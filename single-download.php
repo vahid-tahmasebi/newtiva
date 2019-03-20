@@ -8,11 +8,8 @@ $post_thumbnail_mata = get_post_meta($post_id, 'tiva_show_post_thumbnail');
 $date = new jDateTime(true, true, 'Asia/Tehran');
 get_header();
 get_template_part('template-parts/header');
-get_template_part('template-parts/top-menu');
+get_template_part('template-parts/top-menu'); ?>
 
-//var_dump(get_post_meta($post_id, 'tiva_vip_post', true))
-
-?>
 <div class="l-header">
     <div class="container">
         <div class="row v3-flex-center ">
@@ -20,9 +17,6 @@ get_template_part('template-parts/top-menu');
                 <span class="span-in-top">موضوع این مقاله:</span>
                 <h2 class="mb-4"><?php the_title() ?></h2>
                 <p class="ex-content"><?php echo get_the_excerpt(); ?></p>
-               <!-- <p class="details">
-                    <a class="btn btn-primary btn-lg" href="<?php the_field('Link_article'); ?>" target="_blank">با یک کلیک مقاله های مرتبط به این مقاله را مطالعه کن</a>
-                </p> -->
             </div>
             <div class="col-xl-3 col-lg-3 col-md-3">
                 <div class="sing-post-thumbnail <?php echo tiva_get_css_class_post_format(get_the_ID()); ?>">
@@ -38,7 +32,6 @@ get_template_part('template-parts/top-menu');
     <svg class="round svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 C40 0 60 0 100 100 Z"></path></svg>
 </div>
 
-<br>
 <div class="container" id="single">
     <div class="main-content-wrapper">
         <?php if (!empty($tiva_options['single-page']['share_btn_show']) && $tiva_options['single-page']['share_btn_show'] === 'true' || !isset($tiva_options['single-page']['share_btn_show'])) :
@@ -116,8 +109,7 @@ get_template_part('template-parts/top-menu');
                             </div>
                         </div>
                     </div>
-                <!----------- End Add Box to Page Download ------------>
-
+                <!-----------End Add Box to Page Download ------------>
                 <header class="singlepost-box-header-download">
                     <h2 class="post-title"><?php the_title() ?></h2>
                     <div class="favorite-star-btn-download" data-toggle="favorite-star-btn" data-placement="top"

@@ -19,7 +19,7 @@ if ($all_post->have_posts()): ?>
 
     <?php while ($all_post->have_posts()):$all_post->the_post() ?>
 
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 wow fadeInUp video-box-wrapper">
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 video-box-wrapper">
             <article class="video-box">
                 <header class="video-header">
                     <div class="clearfix"></div>
