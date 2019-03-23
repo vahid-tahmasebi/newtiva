@@ -12,18 +12,41 @@ function admin_custom_css(){
  #wpadminbar .quicklinks .ab-empty-item, #wpadminbar .quicklinks a, #wpadminbar .shortlink-input {height: 32px;display: block;padding: 0 10px;margin: 0;font-family: IRANsans!important;}     
  #wpcontent #wp-toolbar .menupop a, #wpcontent #wp-toolbar .menupop a .ab-label { font-family: IRANsans !important;}     
  .mce-menubar .mce-menubtn button span {color: #28353d;font-family: IRANsans!important;font-size: 12px!important;}  
- .postbox .inside, .stuffbox .inside { padding: 0 12px 12px; line-height: 1.4em; font-size: 12px!important;font-family: IRANsans!important;}    
- .wp-core-ui .button, .wp-core-ui .button-secondary {color: #fff; background:#2196F3;box-shadow: 0 1px 0 #ccc;vertical-align: top; font-family: IRANsans!important;border-radius: 10px;}      
- .wp-media-buttons .add_media span.wp-media-buttons-icon:before { color: #fff !important;}    
- .wp-core-ui .button-secondary:focus, .wp-core-ui .button-secondary:hover, .wp-core-ui .button.focus, .wp-core-ui .button.hover, .wp-core-ui .button:focus, .wp-core-ui .button:hover {
-    background: #2196F3 !important;
-    border-color: #fff !important;
-    color: #fff !important;
+ .postbox .inside, .stuffbox .inside { padding: 0 12px 12px; line-height: 1.4em; font-size: 12px!important;font-family: IRANsans!important;}        
+  .wp-media-buttons .add_media span.wp-media-buttons-icon:before { color: #fff !important;}    
+  .wp-core-ui .button-secondary:focus, .wp-core-ui .button-secondary:hover, .wp-core-ui .button.focus, .wp-core-ui .button.hover, .wp-core-ui .button:focus, .wp-core-ui .button:hover {
+    background-color: #5cb85c !important;
+    border-color: #4cae4c !important;
+    color: #ffffff !important;
 }
- .mce-btn .mce-txt{font-family: IRANsans !important;}
- #adminmenu .wp-not-current-submenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu {min-width: 175px !important;}
+  .mce-btn .mce-txt{font-family: IRANsans !important;}
+  #adminmenu .wp-not-current-submenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu {min-width: 175px !important;}
   #wpadminbar #wp-admin-bar-my-sites a.ab-item, #wpadminbar #wp-admin-bar-site-name a.ab-item {font-family: IRANsans !important;}   
   #wpadminbar .quicklinks>ul>li>a { padding: 0 7px 0 8px; font-family: IRANsans!important;}
+  .wp-core-ui .button, .wp-core-ui .button-secondary {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
 
 
         </style>';
