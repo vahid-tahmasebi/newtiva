@@ -9,18 +9,19 @@ $date = new jDateTime(true, true, 'Asia/Tehran');
 get_header();
 get_template_part('template-parts/header');
 get_template_part('template-parts/top-menu'); ?>
-
-<div class="l-header">
+<!--********* Top Header Inner Page Download ******-->
+<div class="l-header-article">
     <div class="container">
         <div class="row v3-flex-center ">
             <div class="col-xl-9 col-lg-9 col-md-9 d-none d-sm-block">
-                <span class="span-in-top">موضوع این مقاله:</span>
+                <span class="span-in-top">موضوع این دانلود : </span>
                 <h2 class="mb-4"><?php the_title() ?></h2>
                 <p class="ex-content"><?php echo get_the_excerpt(); ?></p>
             </div>
+<!--********* Picture Top Page Download ***********-->
             <div class="col-xl-3 col-lg-3 col-md-3">
                 <div class="sing-post-thumbnail <?php echo tiva_get_css_class_post_format(get_the_ID()); ?>">
-                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tiva-post-thum'); ?>"
+                    <img style="margin-top: -15px" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tiva-post-thum'); ?>"
                          class="single-post-img  img-thumbnail" alt="<?php echo the_title(); ?>"
                          title="<?php echo the_title(); ?>">
                 </div>
@@ -31,7 +32,6 @@ get_template_part('template-parts/top-menu'); ?>
 <div class="svgbox">
     <svg class="round svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 C40 0 60 0 100 100 Z"></path></svg>
 </div>
-
 <div class="container" id="single">
     <div class="main-content-wrapper">
         <?php if (!empty($tiva_options['single-page']['share_btn_show']) && $tiva_options['single-page']['share_btn_show'] === 'true' || !isset($tiva_options['single-page']['share_btn_show'])) :
@@ -87,29 +87,60 @@ get_template_part('template-parts/top-menu'); ?>
                 echo 'col-xs-12 col-sm-9';
             }
             ?>
-                main-content">
+  main-content">
+
                 <div class="hidden-xs"> <?php echo get_hansel_and_gretel_breadcrumbs(); ?></div>
                 <!----------- Add Box to Page Download ------------>
                     <div class="box-cover">
                         <div class="box-cover-img">
-                            <img src="<?php the_field('add_download_page');?>">
+                            <img width="730px" height="370px" src="<?php the_field('add_image_download');?>">
                         </div>
-
+                        <!-----------Box Marboot Be Buttom ------------>
                         <div class="box-button-img">
+                            <!-----------Box Marboot Be Buttom Link ha------------>
                             <div class="box-button-right">
                                 <div class="keys">
-                                    <a href="<?php the_field('preve_link'); ?>" target="_blank"><i class="fa fa-desktop"></i>پیش نمایش دانلود</a>
-                                    <a href="<?php the_field('pic_product'); ?>"><i class="fa fa-picture-o"></i>تصاویر مربوط به دانلود</a>
+                                    <a href="<?php the_field('preve_link'); ?>" target="_blank"><i class="fa fa-desktop"></i>پیش نمایش این دانلود</a>
+                                    <a href="<?php the_field('pic_product'); ?>"><i class="fa fa-picture-o"></i>تصاویر مربوط به این دانلود</a>
                                 </div>
                             </div>
+                            <!-----------Box Eshterak Gozari Dar Box Download ------------>
                             <div class="box-button-left">
                                 <div class="share">
+                                    <span>اشتراک گذاری در :</span>
+                                        <!-- www.facebook.com -->
+                                        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=<?php echo urlencode(get_permalink()); ?>">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <!-- plus.google.com -->
+                                        <a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,
+                                                 '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                                        <i class="fa fa-google-plus-square"></i>
+                                        </a>
+                                        <!-- twitter.com -->
+                                        <a href="http://twitter.com/home/?status=<?php the_title(); ?> - <?php the_permalink(); ?>">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <!-- www.linkedin.com -->
+                                        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                       <!-- telegram.me -->
+                                        <a href="https://telegram.me/share/url?url=<?php the_permalink() ?>&text=<?php the_title(); ?>">
+                                            <i class="fa fa-telegram"></i>
+                                        </a>
+                                        <!-- pinterest.com -->
+                                        <a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+                                        echo $url; ?>">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
 
                                 </div>
                             </div>
                         </div>
                     </div>
                 <!-----------End Add Box to Page Download ------------>
+
                 <header class="singlepost-box-header-download">
                     <h2 class="post-title"><?php the_title() ?></h2>
                     <div class="favorite-star-btn-download" data-toggle="favorite-star-btn" data-placement="top"
@@ -341,13 +372,50 @@ get_template_part('template-parts/top-menu'); ?>
                                     </div>
                                     <i class="fa fa-list" aria-hidden="true"></i>
                                     <span><?php _e('دسته بندی ها:', 'tiva'); ?> </span>
-                                    <?php the_category(' '); ?>
+                                    <?php
+                                    $terms = get_the_terms($post->ID, 'wordpress-themes');
+                                    if ($terms !== false) {
+                                        foreach ($terms as $term) {
+                                            echo '<a href="' . get_term_link($term->term_id, 'wordpress-themes') . '">' . $term->name . '</a>';
+                                        }
+
+                                    }
+                                    ?>
+                                    <?php
+                                    $terms = get_the_terms($post->ID, 'wordpress-plugins');
+                                    if ($terms !== false) {
+                                        foreach ($terms as $term) {
+                                            echo '<a href="' . get_term_link($term->term_id, 'wordpress-plugins') . '">' . $term->name . '</a>';
+                                        }
+
+                                    }
+                                    ?>
+
                                 </div>
+
                                 <div class="single-post-tags">
                                     <i class="fa fa-tags" aria-hidden="true"></i>
                                     <span><?php _e('برچسب ها:', 'tiva'); ?> </span>
-                                    <span><?php the_tags('', ' '); ?></span>
+                                    <?php
+                                    $terms = get_the_terms($post->ID, 'themes_tag');
+                                    if ($terms !== false) {
+                                        foreach ($terms as $term) {
+                                            echo '<a href="' . get_term_link($term->term_id, 'themes_tag') . '">' . '#' . $term->name . '</a>';}
+                                    }
+
+                                    ?>
+
+                                    <?php
+                                    $terms = get_the_terms($post->ID, 'plugins_tag');
+                                    if ($terms !== false) {
+                                        foreach ($terms as $term) {
+                                            echo '<a href="' . get_term_link($term->term_id, 'plugins_tag') . '">' . '#' . $term->name . '</a>';}
+                                    }
+
+                                    ?>
+
                                 </div>
+
                             </footer>
                         <?php endwhile; ?>
                     <?php endif; ?>
@@ -361,13 +429,13 @@ get_template_part('template-parts/top-menu'); ?>
                 }
                 ?>
                 <div class="clearfix"></div>
-                <!-- /********************************* BEGIN ADD IN TIVA V5.8  ****************************/-->
+
                 <?php if (!empty($tiva_options['single-page']['rrs_show']) && $tiva_options['single-page']['rrs_show'] === 'true'): ?>
                     <div class="h-rss-wrapper card-wrapper">
                         <?php get_template_part('template-parts/tiva-rss') ?>
                     </div>
                 <?php endif; ?>
-                <!-- /********************************* END ADD IN TIVA V5.8 ******************************/-->
+
                 <?php
                 if (!empty($tiva_options['single-page']['post_related_show']) && $tiva_options['single-page']['post_related_show'] === 'true' || !isset($tiva_options['single-page']['post_related_show'])) :
                     ?>
@@ -409,8 +477,5 @@ get_template_part('template-parts/top-menu'); ?>
         </div>
     </div>
 </div>
-<?php
-get_template_part('template-parts/footer');
-get_footer();
-?>
+<?php get_template_part('template-parts/footer');get_footer(); ?>
 

@@ -45,7 +45,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
 <?php } ?>
 
 <!------ Menu Top Site ------------>
-<div class="header-menu-top">
+<div class="header-menu-top hidden-xs hidden-sm">
     <div class="header-menu-inner-top ">
         <div class="container">
             <div class="row">
@@ -54,7 +54,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                         <?php wp_nav_menu(array('theme_location' => 'tiva_header_top_main_menu', 'container_class' => 'theader-menu')); ?>
                     </div>
                 </div>
-                <div class="col-lg-3 hid">
+                <div class="col-lg-3 hidden-xs hidden-sm">
                     <div class="pull-left">
                         <div class="menu-info">
                             <i>  ۰۹۳۵۹۹۰۵۳۵۹ : مشاوره رایگان</i>

@@ -115,6 +115,7 @@ function tiva_setup()
         add_image_size('tiva-post-widget-thum', 65, 65, true);
         add_image_size('tiva-related-post-thum', 75, 75, true);
         add_image_size('tiva-video-thum', 253, 142, true);
+        add_image_size('archive-seo', 120, 120, true);
     }
 
     //ADD THEME TEXT DOMAIN TRANSLATED

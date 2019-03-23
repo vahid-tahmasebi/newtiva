@@ -1,12 +1,11 @@
 <?php
-//custom post types
-add_action('init', 'tiva_add_download_custom_post_type');
+//custom post types Download
 function tiva_add_download_custom_post_type(){
 
     $labels = array(
         'name' => 'دانلود',
         'singular_name' => 'دانلود',
-        'menu_name' => 'دانلود ها',
+        'menu_name' => 'دانلود های سایت',
         'name_admin_bar' => 'دانلود',
         'add_new' => 'دانلود جدید',
         'add_new_item' => 'آیتم دانلود جدید',
@@ -22,7 +21,7 @@ function tiva_add_download_custom_post_type(){
 
     $args = array(
         'labels' => $labels,
-        'description' => 'مطالب دانلودی قالب',
+        'description' => 'وب سایت کارسازشو برای اولین بار قصد دارد سیستم اشتراکی افزونه و قالب های وردپرس را در وب فارسی راه اندازی کند.',
         'public' => true,
         'publicly_queryable' => true,
         'show_ui' => true,
@@ -34,7 +33,7 @@ function tiva_add_download_custom_post_type(){
         'has_archive' => true,
         'hierarchical' => false,
         'menu_position' => null,
-        'taxonomies' => array('post_tag', 'category'),
+        'taxonomies' => array('themes_tag', 'wordpress-themes'),
         'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'),
         'show_in_rest' => true
 
@@ -43,9 +42,9 @@ function tiva_add_download_custom_post_type(){
     //exclude_from_search
     register_post_type('download', $args);
 }
+add_action('init', 'tiva_add_download_custom_post_type');
 
-// Register Custom Taxonomy
-add_action( 'init', 'add_custom_taxonomy_themes', 0 );
+// Register Custom Taxonomy Themes
 function add_custom_taxonomy_themes() {
 
     $labels = array(
@@ -85,7 +84,7 @@ function add_custom_taxonomy_themes() {
         'show_tagcloud'              => true,
         'rewrite'                    => $rewrite,
     );
-    register_taxonomy( 'themes', array( 'download' ), $args );
+    register_taxonomy( 'wordpress-themes', array( 'download' ), $args );
 
 //******************************************************************************************
     // Add Tag To ThemesWordpress Taxonomy , NOT hierarchical (like tags)
@@ -115,14 +114,14 @@ function add_custom_taxonomy_themes() {
         'labels' => $labels,
         'hierarchical' => false,
         'public' => true,
-        'rewrite' => array('slug' => 'Themes_Tag'),
+        'rewrite' => array('slug' => 'themes_tag'),
     );
-    register_taxonomy('wl_Themes_Tag', 'download', $args);
+    register_taxonomy('themes_tag', 'download', $args);
 }
+add_action( 'init', 'add_custom_taxonomy_themes', 0 );
 
 
-// Register Custom Taxonomy
-add_action( 'init', 'add_custom_taxonomy_plugins', 0 );
+// Register Custom Taxonomy Plugins
 function add_custom_taxonomy_plugins() {
     $labels = array(
         'name'                       => _x( 'دسته افزونه ها', 'Taxonomy General Name', 'text_domain' ),
@@ -161,7 +160,7 @@ function add_custom_taxonomy_plugins() {
         'show_tagcloud'              => true,
         'rewrite'                    => $rewrite,
     );
-    register_taxonomy( 'plugins', array( 'download' ), $args );
+    register_taxonomy( 'wordpress-plugins', array( 'download' ), $args );
     //******************************************************************************************
     // Add Tag To ThemesWordpress Taxonomy , NOT hierarchical (like tags)
     $labels = array(
@@ -188,9 +187,10 @@ function add_custom_taxonomy_plugins() {
         'labels' => $labels,
         'hierarchical' => false,
         'public' => true,
-        'rewrite' => array('slug' => 'plugins_Tag'),
+        'rewrite' => array('slug' => 'plugins_tag'),
     );
-    register_taxonomy('wl_plugins_Tag', 'download', $args);
+    register_taxonomy('plugins_tag', 'download', $args);
 
 }
+add_action( 'init', 'add_custom_taxonomy_plugins', 0 );
 
