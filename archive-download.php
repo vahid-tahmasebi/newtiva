@@ -30,8 +30,8 @@
                         </div>
                         <h2><?php the_title(); ?></h2>
                         <div class="div-auther">
-                            <p>منتشرکننده : <?php the_author() ?> </p>
-                            <p>تاریخ انتشار : <?php echo get_the_date('H:i , Y-m-d ') ?></p>
+                            <p><b>منتشرکننده</b> : <?php the_author() ?> </p>
+                            <p><b>تاریخ انتشار</b> : <?php echo get_the_date('H:i , Y-m-d ') ?></p>
                         </div>
                         <div class="namayesh-but">
                             <button class="btn btn-info butoon-in-download" title="" href="#" >میخواهم دانلود کنم</button>
@@ -42,7 +42,7 @@
             </div>
         </div>
     </div>
+    <div style="margin-top: 50px" class="category-desc">کسب و کار اینترنتی خودتو با مشاوره کارسازشو شروع کن ، قول میدیم کنارتون باشیم تا زمانی که درآمد ایده ال تون رو از اینترنت کسب کنید. </div>
 </div>
-<div style="margin-top: 50px" class="category-desc">کسب و کار اینترنتی خودتو با مشاوره کارسازشو شروع کن ، قول میدیم کنارتون باشیم تا زمانی که درآمد ایده ال تون رو از اینترنت کسب کنید. </div>
 <?php get_template_part('template-parts/footer');get_footer(); ?>
 

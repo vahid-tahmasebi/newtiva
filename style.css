@@ -13579,10 +13579,10 @@ i.fa.fa-chevron-up {
   margin-bottom: 30px;
 }
 .head-in-arshive>p{
-    font-size: 10px;
+    font-size: 11px;
     text-align: justify;
     margin-top: 15px;
-    font-weight: 900;
+    font-weight: 200;
     line-height: 2.5;
 }
 .butten-head-arshive{
@@ -13619,10 +13619,10 @@ i.fa.fa-chevron-up {
     margin-bottom: 10px;
 }
 .box-in-download>a>h2{
-        font-family: IRANSans;
-    font-size: 18px;
-    margin-top: 15px;
-    margin-right: 10px;
+    font-family: IRANSans;
+    font-size: 17px;
+    margin-top: 16px;
+    margin-right: 8px;
     color: #3b4446;
     transition: color .3s;
 }
@@ -13649,10 +13649,11 @@ i.fa.fa-chevron-up {
     font-size: 15px;
 }
 .image-box-arshive{
-  width: 250px;
+  width: 330px;
   height: 250px;
   float:right;
   margin-top: 30px;
+  margin-right: 25px;
 }
 .image-in-category{
   width: 200px;
@@ -13739,6 +13740,7 @@ i.fa.fa-chevron-up {
   width: 100%;
   text-align: center;
   display: -webkit-inline-box;
+  margin-top: 10px;
 }
 .div-auther>p{
   margin-right: 13px;
@@ -13749,37 +13751,38 @@ i.fa.fa-chevron-up {
 }
 /******************************* Nummber too Top Archive Site ********************************/
 .l-header {
-  background: linear-gradient(rgb(5, 119, 255) 0%, rgb(66, 8, 188) 100%);
+  /*background: linear-gradient(rgb(5, 119, 255) 0%, rgb(66, 8, 188) 100%);*/
+  background-color: #28353d;
   min-height: 400px;
   padding: 50px 0 50px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.l-header p{
+  color: #ffffff;
+  text-align: justify;
+  margin-top: 30px;
+}
 .l-header h1 {
   font-size: 40px;
   font-weight: 800;
   letter-spacing: -1px;
-  color: #fff;
+  color: #ffffffff;
   margin-top: 0px;
 }
 .l-header h2 {
   font-size: 25px;
   font-weight: 600;
-  color: #c7e2ff;
+  color: #ffffff;
 }
 .l-header .details {
-  color: rgba(255, 255, 255, 0.8);
+  color:#ffffff;
   font-size: 16px;
   margin-top: 40px;
   line-height: 25px;
   text-align: justify;
   font-weight: 100;
 }
-/*
-.l-header img {
-  margin-right: -200px;
-  margin-top: -150px;
-}*/
 @media (max-width: 1000px) {
   .l-header {
     padding: 30px 0;
@@ -14010,29 +14013,6 @@ img {
   vertical-align: middle;
   border-style: none;
 }
-.l-header h2 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #c7e2ff;
-  font-family: IRANSans;
-}
-.l-header h1 {
-  font-size: 30px;
-  line-height: 2;
-  font-weight: 800;
-  letter-spacing: -1px;
-  color: #fff;
-  margin-top: 20px;
-  font-family: IRANSans;
-}
-.l-header .details {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
-  margin-top: 40px;
-  line-height: 25px;
-  text-align: justify;
-  font-weight: 100;
-}
 .btn-primary {
   color: #fff;
   background-color: #337ab7;
@@ -14062,18 +14042,13 @@ img {
   color: #ffffff;
 }
 .l-header .details {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   font-size: 16px;
   margin-top: 40px;
   line-height: 25px;
   text-align: justify;
   font-weight: 100;
 }
-/*
-.l-header img {
-  margin-right: -200px;
-  margin-top: -150px;
-}*/
 @media (max-width: 1000px) {
   .l-header {
     padding: 30px 0;
@@ -14303,35 +14278,6 @@ img {
 img {
   vertical-align: middle;
   border-style: none;
-}
-.l-header h2 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #c7e2ff;
-  font-family: IRANSans;
-}
-.l-header h1 {
-  font-size: 30px;
-  line-height: 2;
-  font-weight: 800;
-  letter-spacing: -1px;
-  color: #fff;
-  margin-top: 20px;
-  font-family: IRANSans;
-}
-.l-header .details {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 16px;
-  margin-top: 40px;
-  line-height: 25px;
-  text-align: justify;
-  font-weight: 100;
-}
-.btn-primary {
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
-  font-family: IRANsans;
 }
 .span-in-top{color: #ffffff;font-weight: 900;font-size: 20px;}
 /***********************************************************************************************/
@@ -14573,9 +14519,4 @@ img {
 .archiveposts p {
   height: 80px ;
   overflow: hidden;
-}
-.p-category_description{
-  color:#fff;
-  text-align: justify;
-  margin-top: 30px;
 }

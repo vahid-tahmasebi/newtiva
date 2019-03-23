@@ -33,7 +33,7 @@ function tiva_add_download_custom_post_type(){
         'has_archive' => true,
         'hierarchical' => false,
         'menu_position' => null,
-        'taxonomies' => array('themes_tag', 'wordpress-themes'),
+        'taxonomies' => array('post_tag', 'category'),
         'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'),
         'show_in_rest' => true
 

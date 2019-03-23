@@ -1,17 +1,17 @@
 <?php
 get_header();
 get_template_part('template-parts/header');
-get_template_part('template-parts/top-menu');
-?>
+get_template_part('template-parts/top-menu'); ?>
     <div class="mask hidden-xs">
         <div class="breadcrumbs">
             <div class="container">
                 <!--- Main Header Of Arshive -->
                 <div class="row">
-                    <div class="col-lg-9 hidden-xs">
+                    <div class="col-lg-8 hidden-xs">
                         <div class="head-in-arshive">
-                            <h1>آرشیو مطالب <?php echo get_the_archive_title(); ?> </h1>
-                            <p><?php echo category_description(); ?></p>
+                            <h1>کلیه ویدئو های آموزش وب سایت کارسازشو :</h1>
+                            <p>وب سایت کارسازشو با توجه به تحقیقاتی که در بازار وب ایران انجام داده به این نتیجه رسیده که کاربران علاقه زیادی به خواندن مطالب نوشتاری ندارند ، و طی تحقیقات بین المللی که نیز انجام شده نشان داده که کاربران حتی برای آموزش خود حاضر نیستن یک متن طولانی را بخوانند اما برای ویدئو های آموزشی وقت و ارزش زیادی قائل هستند ، در همین راستا بخشی از وب سایت کارسازشو نیز به این موضوع پرداخته است ، امیدوارم مورد پسندتان باشد.</p>
+                            <p style="font-weight: 500;color:greenyellow;">شما میتونید از طریق منو اصلی به قسمت درخواست آموزش برید و هر نوع آموزشی که در حوزه کاری و تخصصی ما باشه درخواست بدید تا در اولین فرصت برای شما تهیه بشه..</p>
                         </div>
                         <hr>
                         <div class="butten-head-arshive">
@@ -60,9 +60,10 @@ get_template_part('template-parts/top-menu');
                                 </div>
                             </div></div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="image-box-arshive">
-                            <img width="250px" height="250px" src="<?php echo the_field('pic_categorys'); ?>">
+                            <img style="position: absolute;" width="330px" height="250px" src="<?php echo get_template_directory_uri() . '/images/noise-tv.svg'; ?>">
+                            <img style="margin-top: 10px;margin-right: 55px;" width="250px" height="200px" src="<?php echo get_template_directory_uri() . '/images/noise.jpg'; ?>">
                         </div>
                     </div>
                 </div>
@@ -94,6 +95,4 @@ get_template_part('template-parts/top-menu');
             </div>
         </div>
     </section>
-<?php
-get_template_part('template-parts/footer');
-get_footer();
+<?php get_template_part('template-parts/footer'); get_footer(); ?>

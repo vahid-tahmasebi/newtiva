@@ -10,7 +10,7 @@ get_template_part('template-parts/top-menu'); ?>
                 <div class="row">
                     <div class="col-lg-9 hidden-xs">
                         <div class="head-in-arshive">
-                            <h1>آرشیو مطالب <?php echo get_the_archive_title(); ?> </h1>
+                            <h2>آرشیو مطالب <?php echo get_the_archive_title(); ?> </h2>
                             <p><?php echo category_description(); ?></p>
                         </div>
                         <hr>

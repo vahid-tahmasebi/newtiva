@@ -62,7 +62,7 @@ get_template_part('template-parts/top-menu');
                     </div>
                     <div class="col-lg-3">
                         <div class="image-box-arshive">
-                            <img width="250px" height="250px" src="<?php echo the_field('pic_cate'); ?>">
+                            <img width="250px" height="250px" src="<?php echo the_field('pic_categorys'); ?>">
                         </div>
                     </div>
                 </div>

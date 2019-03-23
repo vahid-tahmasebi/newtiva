@@ -7,15 +7,9 @@ $author_id = $author->ID;
 $tiva_options = get_option('tiva_options');
 ?>
     <div class="container main-content" id="author-page">
-        <div class="row">
-            <div class="col-xs-12 hidden-xs col-sm-12">
-                <?php echo get_hansel_and_gretel_breadcrumbs(); ?>
-            </div>
-        </div>
-
         <div class="author-about-page">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-lg-12 col-md-12">
                     <?php
                     if (!empty($tiva_options['author-page']['author_box_bio_show']) && $tiva_options['author-page']['author_box_bio_show'] === 'true' || !isset($tiva_options['author-page']['author_box_bio_show'])) {
                         get_template_part('template-parts/author-about-wrapper-page');
@@ -28,19 +22,28 @@ $tiva_options = get_option('tiva_options');
             <ul class="author-meta-ul">
                 <?php if (!empty($tiva_options['author-page']['author_box_info_show']) && $tiva_options['author-page']['author_box_info_show'] === 'true' || !isset($tiva_options['author-page']['author_box_info_show'])) : ?>
                     <li>
-                        <div class="meta-wrapper " style="background-color:#26C6DA;">
+                        <div class="meta-wrapper " style="background-color:#28353d;">
                             <span class="meta-icon"><i class="fa fa-gift" aria-hidden="true"></i></span>
                             <span class="meta-num"><?php echo tiva_change_number(intval(tiva_get_user_score($author_id))); ?></span>
-                            <span class="meta-title">امتیاز</span>
+                            <span class="meta-title">جمع امتیاز های کسب شده</span>
                         </div>
                     </li>
                     <li>
-                        <div class="meta-wrapper" style="background-color:#EC407A;">
+                        <div class="meta-wrapper" style="background-color:#28353d;">
                             <span class="meta-icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
                             <span class="meta-num"><?php echo tiva_change_number(count_user_posts(get_the_author_meta('ID'))); ?></span>
-                            <span class="meta-title">تعداد مقاله</span>
+                            <span class="meta-title">تعداد مقاله های منتشر شده</span>
                         </div>
                     </li>
+
+                    <li>
+                        <div class="meta-wrapper" style="background-color:#28353d;">
+                            <span class="meta-icon"><i class="fa fa-gift" aria-hidden="true"></i></span>
+                            <span class="meta-num"><?php echo tiva_change_number(number_format(tiva_get_user_wallet_balance(get_current_user_id()))); ?></span>
+                            <span class="meta-title">موجودی کیف پول حاصل از انتشار مقاله</span>
+                        </div>
+                    </li>
+
                 <?php endif; ?>
             </ul>
         </div>

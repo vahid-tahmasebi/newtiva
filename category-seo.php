@@ -4,17 +4,17 @@ get_template_part('template-parts/header');
 get_template_part('template-parts/top-menu'); ?>
 <div class="l-header">
     <div class="container">
-        <div class="row v3-flex-center ">
-            <div class="col-xl-3 col-lg-3 col-md-2 d-none d-sm-block">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-2">
                 <div class="image-box-arshive">
                     <img width="250px" height="250px" src="<?php echo the_field('pic_categorys'); ?>">
                 </div>
             </div>
             <div class="col-xl-9 col-lg-9 col-md-10">
-                <h2 class="mb-4"><?php echo the_archive_title(); ?></h2>
-                <p class="p-category_description"><?php echo category_description(); ?></p>
+                <h2>مقالات این <?php echo the_archive_title(); ?></h2>
+                <p><?php echo category_description(); ?></p>
                 <p class="details">
-                    <a class="btn btn-info btn-block" href="">همین حالا شروع کن به خوندن این مقالات </a>
+                    <a class="btn btn-info btn-block" href="">همین حالا شروع به خوندن مقالات تخصصی در زمینه فوق بکن </a>
                 </p>
             </div>
         </div>
@@ -26,10 +26,12 @@ get_template_part('template-parts/top-menu'); ?>
         <path d="M0 100 C40 0 60 0 100 100 Z"></path>
     </svg>
 </div>
+<!-- Box Too The In Header -->
 <div class="container">
-    <a href="#"><h3 class="homebox-title"><?php echo the_archive_title(); ?></h3></a>
+    <a href="<?php the_permalink(); ?>"><h3 class="homebox-title">مقالات <?php echo the_archive_title(); ?></h3></a>
     <div class="category-desc"><?php echo the_archive_description(); ?></div>
 </div>
+<!-- Box Too The In Header -->
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
@@ -57,5 +59,4 @@ get_template_part('template-parts/top-menu'); ?>
         </div>
     </div>
 </div>
-
 <?php get_template_part('template-parts/footer');get_footer(); ?>
