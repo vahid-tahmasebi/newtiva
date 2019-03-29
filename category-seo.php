@@ -7,7 +7,11 @@ get_template_part('template-parts/top-menu'); ?>
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-2">
                 <div class="image-box-arshive">
-                    <img width="250px" height="250px" src="<?php echo the_field('pic_categorys'); ?>">
+                    <?php
+                    // get the current taxonomy term
+                    $term = get_queried_object();
+                    $image = get_field('add-picture-categoris', $term); ?>
+                    <img width="250px" height="250px" src="<?php echo $image; ?>">
                 </div>
             </div>
             <div class="col-xl-9 col-lg-9 col-md-10">

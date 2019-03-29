@@ -1,8 +1,7 @@
 <?php
 get_header();
 get_template_part('template-parts/header');
-get_template_part('template-parts/top-menu');
-?>
+get_template_part('template-parts/top-menu'); ?>
     <section class="main-content hamyar-home ">
         <div class="container">
             <div class="row">

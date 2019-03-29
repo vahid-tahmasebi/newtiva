@@ -1734,4 +1734,5 @@ include get_template_directory() . '/panel/panel.php';
 include get_template_directory() . '/inc/option-in-wp/style-add-in-dashbord.php';
 include get_template_directory() . '/inc/option-in-wp/thaghire-name-wp.php';
 include get_template_directory() . '/inc/option-in-wp/box-fild-add-download.php';
-/*******************************************************************************/
+/********************************* add excerpt to page site **********************************************/
+add_post_type_support( 'page', 'excerpt' );

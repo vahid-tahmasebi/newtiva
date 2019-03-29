@@ -12,8 +12,8 @@ get_template_part('template-parts/top-menu'); ?>
         <div class="container">
             <div class="row v3-flex-center ">
                 <div class="col-xl-9 col-lg-9 col-md-9 d-none d-sm-block">
-                    <span class="span-in-top">موضوع این مقاله:</span>
-                    <h2 class="mb-4"><?php the_title() ?></h2>
+                    <span class="span-in-top">موضوع این صفحه:</span>
+                    <h2 style="margin-right: 60px;" class="mb-4"><?php the_title() ?></h2>
                     <p class="ex-content"><?php echo get_the_excerpt(); ?></p>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-3">

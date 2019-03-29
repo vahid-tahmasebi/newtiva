@@ -16,14 +16,15 @@
 <div class="container">
     <a href="#"><h3 class="homebox-title">دانلود از جدید ترین <?php echo get_the_archive_title(); ?> وردپرس</h3></a>
     <div style="text-align: right;" class="category-desc">
-        <div style="width:auto; height:auto; float:right;">
-            <div style="float: right;margin-left: 10px;">
-                <img width="150px" height="150px;" src="<?php echo the_field('pic_categorys'); ?>">
+        <div style="width:auto; height:auto;">
+            <div style="float:left;margin-right:15px;">
+                <?php
+                // get the current taxonomy term
+                $term = get_queried_object();
+                $image = get_field('add-picture-categoris', $term); ?>
+                <img style="border-radius: 10px;" width="150px" height="150px" src="<?php echo $image; ?>">
             </div>
-            <p style="margin-right: 165px;text-align: right;">
-                <?php echo category_description(); ?>
-            </p>
-
+            <p><?php echo category_description(); ?></p>
         </div>
     </div>
 </div>

@@ -1,8 +1,6 @@
 <div class="clearfix"></div>
 <?php
-$tiva_options = get_option('tiva_options');
-//echo base64_decode($tiva_options['index-page']['fl1_script']);
-?>
+$tiva_options = get_option('tiva_options'); ?>
 
 <?php
 /**
@@ -70,7 +68,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
         <div class="footer-widget-inner container">
             <div class="row">
                 <div class="col-xs-12 col-sm-4">
-                    <!--   /********************************* BEGIN EDITED IN TIVA V5.8  ****************************/-->
+
                     <?php if (!empty($tiva_options['index-page']['show_nemad_logo']) && $tiva_options['index-page']['show_nemad_logo'] === 'true'): ?>
                         <div class="logo1">
                             <?php echo (isset($tiva_options['index-page']['fl1_script'])) ? base64_decode($tiva_options['index-page']['fl1_script']) : ''; ?>
@@ -86,7 +84,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                             </p>
                         </div>
                     <?php endif; ?>
-                    <!--                    /********************************* END EDITED IN TIVA V5.8 ******************************/-->
+
 
                 </div>
                 <div class="col-xs-12 col-sm-4">
@@ -133,7 +131,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                                                                                   aria-hidden="true"></i></a></li>
                                 <?php endif; ?>
 
-                                <!-- /********************************* BEGIN ADD IN TIVA V5.8  ****************************/-->
+
                                 <?php if (isset($tiva_options['social-network']['whatsapp-show']) && $tiva_options['social-network']['whatsapp-show'] === 'true'): ?>
                                     <li class="whatsapp"><a
                                                 href="<?php echo (!empty($tiva_options['social-network']['whatsapp-url'])) ? $tiva_options['social-network']['whatsapp-url'] : '#'; ?>"
@@ -150,11 +148,11 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                                                  alt="آپارات" title="آپارات">
                                         </a></li>
                                 <?php endif; ?>
-                                <!--  /********************************* END ADD IN TIVA V5.8 ******************************/-->
+
                             </ul>
                         </div>
                     </div>
-                    <!--/********************************* BEGIN EDITED IN TIVA V5.8  ****************************/-->
+
                     <?php if (!empty($tiva_options['single-page']['rrs_show']) && $tiva_options['single-page']['rrs_show'] === 'true'): ?>
                         <div class="footer-rss">
                             <div class="footer-rss-text"><P><i class="fa fa-envelope-o"></i> برای عضویت در خبرنامه و
@@ -165,7 +163,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                         </div>
 
                     <?php endif; ?>
-                    <!--/********************************* END EDITED IN TIVA V5.8 ******************************/-->
+
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div class="about-wrapper">
@@ -200,7 +198,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                         <strong class="copy-right"><?php echo (isset($tiva_options['index-page']['tiva_copy_right_op'])) ? $tiva_options['index-page']['tiva_copy_right_op'] : ''; ?></strong>
                     </div>
                 </div>
-                <!--                /********************************* BEGIN EDITED IN TIVA V5.8  ****************************/-->
+
                 <?php if (!empty($tiva_options['index-page']['qrcode_show']) && $tiva_options['index-page']['qrcode_show'] === 'true'): ?>
                     <div class="col-lg-6 col-sm-6  hidden-xs col-xs-12">
                         <img class="qrcode" title="کپی رایت"
@@ -208,7 +206,7 @@ if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_
                              alt="کپی رایت">
                     </div>
                 <?php endif; ?>
-                <!--                /********************************* END EDITED IN TIVA V5.8 ******************************/-->
+
             </div>
         </div>
     </div>
